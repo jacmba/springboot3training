@@ -1,7 +1,7 @@
 package net.jazbelt.springboot3training.game;
 
 public class GameRunner {
-    private IGame game;
+    private final IGame game;
 
     public GameRunner(IGame game) {
         this.game = game;
