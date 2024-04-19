@@ -4,7 +4,7 @@ import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.context.annotation.Primary;
 
-@Configuration
+//@Configuration
 public class GameConfiguration {
 
     @Bean
@@ -12,7 +12,7 @@ public class GameConfiguration {
         return new MarioGame();
     }
 
-    @Bean
+    /*@Bean
     public IGame sfGame() {
         return new SFGame();
     }
@@ -20,7 +20,7 @@ public class GameConfiguration {
     @Bean
     public IGame tetrisGame() {
         return new TetrisGame();
-    }
+    }*/
 
     @Bean
     @Primary

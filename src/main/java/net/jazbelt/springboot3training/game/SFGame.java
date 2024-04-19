@@ -1,5 +1,10 @@
 package net.jazbelt.springboot3training.game;
 
+import org.springframework.beans.factory.annotation.Qualifier;
+import org.springframework.stereotype.Component;
+
+@Component
+@Qualifier("SFGameQualifier")
 public class SFGame implements IGame {
     public void up() {
         System.out.println("Attack");
