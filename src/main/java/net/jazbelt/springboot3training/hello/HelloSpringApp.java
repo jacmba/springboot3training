@@ -11,6 +11,8 @@ public class HelloSpringApp {
         int age = ctx.getBean(Integer.class, "age");
         System.out.println("Hello, " + name + ". You are " + age);
         System.out.println(ctx.getBean("person"));
-        System.out.println(ctx.getBean("address"));
+        System.out.println(ctx.getBean("person2MethodCall"));
+        System.out.println(ctx.getBean("person3Parameters"));
+        System.out.println(ctx.getBean("address1"));
     }
 }
