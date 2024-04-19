@@ -1,6 +1,6 @@
 package net.jazbelt.springboot3training.game;
 
-public class SFGame {
+public class SFGame implements IGame {
     public void up() {
         System.out.println("Attack");
     }

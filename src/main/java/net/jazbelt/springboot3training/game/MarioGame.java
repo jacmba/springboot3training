@@ -1,6 +1,6 @@
 package net.jazbelt.springboot3training.game;
 
-public class MarioGame {
+public class MarioGame implements IGame {
     public void up() {
         System.out.println("Jump!");
     }

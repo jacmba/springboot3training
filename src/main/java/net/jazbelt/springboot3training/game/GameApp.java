@@ -2,9 +2,14 @@ package net.jazbelt.springboot3training.game;
 
 public class GameApp {
     public static void main(String[] args) {
-        // MarioGame game = new MarioGame();
-        SFGame game = new SFGame();
-        GameRunner runner = new GameRunner(game);
-        runner.run();
+        MarioGame mario = new MarioGame();
+        SFGame sf = new SFGame();
+        TetrisGame tetris = new TetrisGame();
+        GameRunner marioRunner = new GameRunner(mario);
+        GameRunner sfRunner = new GameRunner(sf);
+        GameRunner tetrisRunner = new GameRunner(tetris);
+        marioRunner.run();
+        sfRunner.run();
+        tetrisRunner.run();
     }
 }
